@@ -1,0 +1,359 @@
+*{
+  font-family: "宋体";
+}
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "宋体";
+  font-size: 1rem;
+  line-height: 1.5;
+  background-image: url(../image/background.jpg);
+  padding-bottom: 5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.responsive-wrapper {
+  width: 95%;
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.page-title {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.page-title h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  position: relative;
+}
+.page-title h1:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -3px;
+  height: 2px;
+  background-color: currentcolor;
+}
+
+.magazine-layout {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2rem;
+}
+
+.magazine-column {
+  padding: 0 1.5rem;
+  grid-column: span 5;
+}
+@media (min-width: 1200px) {
+  .magazine-column {
+    grid-column: span 1;
+    border-right: 1px solid #ccc;
+  }
+  .magazine-column:last-child {
+    border-right: none;
+  }
+}
+@media (min-width: 1200px) {
+  .magazine-column:nth-child(2) {
+    grid-column: span 2;
+  }
+}
+
+.article + .article {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+}
+
+.article-img + * {
+  margin-top: 1rem;
+}
+
+.article-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #000;
+}
+.article-title--large {
+  font-size: 2rem;
+}
+.article-title--large + * {
+  margin-top: 1.5rem;
+}
+.article-title--medium {
+  font-size: 1.5rem;
+}
+.article-title--medium + * {
+  margin-top: 0.75rem;
+}
+.article-title--small {
+  font-size: 1.25rem;
+}
+.article-title--small + * {
+  margin-top: 0.75rem;
+}
+
+.article-link {
+  color: inherit;
+  font-family:  "STZhongsong";
+}
+
+.mark {
+  background-color: #fabea1;
+  font-family:  "STZhongsong";
+}
+.mark--secondary {
+  background-color: #c2dddf;
+  font-family:  "STZhongsong";
+}
+.mark--tertiary {
+  background-color: #f8e177;
+  font-family:  "STZhongsong";
+}
+
+.article-excerpt,
+.article-creditation {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+.article-excerpt p + p,
+.article-creditation p + p {
+  margin-top: 1.5rem;
+}
+
+.article-author {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.article-author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  background-color: #323232;
+  overflow: hidden;
+  background-blend-mode: multiply;
+}
+.article-author-img + .article-author-info {
+  margin-left: 0.5rem;
+}
+
+.article-author-info {
+  line-height: 1.375;
+}
+.article-author-info dl {
+  margin-top: 0.25em;
+}
+.article-author-info dt {
+  font-weight: 600;
+}
+.article-author-info dd {
+  font-size: 0.875em;
+}
+
+.article-category {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+.article-category svg {
+  max-width: 1.5rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.article-podcast-player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+}
+
+.podcast-play-button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 12px;
+  border: 0;
+  background-color: #000;
+  margin-right: 0.5rem;
+}
+.podcast-play-button svg {
+  max-width: 1rem;
+  max-height: 1rem;
+  fill: #fff;
+}
+
+.podcast-progression {
+  flex: 1;
+  height: 8px;
+  border-radius: 99em;
+  background-color: #d9d4cd;
+  background-image: linear-gradient(to right, #f99970 30%, #d9d4cd 30%, #d9d4cd 100%);
+}
+
+.podcast-time {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-left: 0.5rem;
+}
+
+:focus {
+  outline: 0;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "造字工房尚雅（非商用）";
+    scroll-behavior: smooth;
+
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  background-color: #6d000e;
+  font-family: "造字工房尚雅（非商用）";
+  box-shadow: 2px 4px 10px rgb(125, 79, 79);
+}
+
+header #logosearch {
+  display: flex;
+}
+
+header .logo img {
+  width: 50px;
+  margin: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .search {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  margin: 20px;
+  width: 160px;
+  height: 35px;
+  border: 0px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+
+}
+
+header #navv img {
+  width: 40px;
+
+}
+
+header ul li a#nav:hover,
+header ul li a#nav.active {
+  background: #fff;
+  color: #2b1055;
+
+}
+
+a#nav_bright{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+a#navv img:hover,
+a#navv img:hover {
+  filter: invert(20%);
+}
+.top{
+    color: #fff;
+}
+
+
+.bread {
+	width: 1240px;
+	height: 24px;
+	margin: 65px auto 3em 5em;
+	padding-top: 30px;
+	position: relative;
+	
+}
+
+.bread .type-name {
+	display: inline-block;
+	z-index: 10000;
+}
+
+.bread .type-name a {
+	color: #222222;
+	text-decoration: none;
+}
+
+.bread .type-name+.type-name:before {
+	content: ">\00a0";
+}
+
+.bread .type-name:last-child a {
+	color: #6d000e; 
+}
+
+.bread .type-name:hover a {
+	color: #3c5840;
+}

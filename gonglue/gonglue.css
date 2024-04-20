@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: url(../image/background.jpg);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  background-color: #6d000e;
+  font-family: "造字工房尚雅（非商用）";
+  box-shadow: 2px 4px 10px rgb(125, 79, 79);
+}
+
+header #logosearch {
+  display: flex;
+}
+
+header .logo img {
+  width: 50px;
+  margin: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .search {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  margin: 20px;
+  width: 160px;
+  height: 35px;
+  border: 0px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+
+}
+
+header #navv img {
+  width: 40px;
+
+}
+
+header ul li a#nav:hover,
+header ul li a#nav.active {
+  background: #fff;
+  color: #2b1055;
+
+}
+
+a#nav_bright{
+    background: #fff;
+    color: #2b1055;
+}
+
+
+a#navv img:hover,
+a#navv img:hover {
+  filter: invert(20%);
+}
+
+
+.wrap {
+  width: 140px;
+  float: left;
+  margin-top: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.wrap .nav {
+  display: flex;
+  font-family: "造字工房尚雅（非商用）";
+  flex-direction: column;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 10%;
+  height: 100vh;
+  box-shadow: 0 5px 5px -5px rgba(109, 0, 14, 0.15), 0 10px 10px -5px rgba(109, 0, 14, 0.15), 0 15px 15px -5px rgba(109, 0, 14, 0.15), 0 20px 20px -5px rgba(109, 0, 14, 0.15);
+}
+.wrap .nav__link {
+  height: 8%;
+  padding: 20px 40px;
+  list-style: none;
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrap .nav__link a{
+  text-decoration: none;
+  color: #6D000E;
+}
+
+.wrap .nav__link:hover:nth-of-type(1) ~ .nav__bar {
+  top: 1%;
+}
+.wrap .nav__link:hover:nth-of-type(2) ~ .nav__bar {
+  top: 9%;
+}
+.wrap .nav__link:hover:nth-of-type(3) ~ .nav__bar {
+  top: 17%;
+}
+.wrap .nav__link:hover:nth-of-type(4) ~ .nav__bar {
+  top: 25%;
+}
+.wrap .nav__bar {
+  top: 17%;
+  left: 0;
+  position: absolute;
+  background: #6D000E;
+  width: 5px;
+  height: 8%;
+  transition: 0.35s cubic-bezier(0.32, 1.4, 0.13, 1.4);
+}
+
+/* --------表格--------- */
+table{
+    float: left;
+    margin-top: 80px;
+    margin-left: 180px;
+}
+
+.tu{
+    width: 300px;
+    height: 280px;
+    background-color: #D1D0C3;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(125, 79, 79, .8);
+}
+
+table .tu img{
+    width: 300px;
+    height: 230px;
+    overflow: hidden;
+}
+
+.tu p{
+    padding: 10px;
+}

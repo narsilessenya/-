@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>建筑科普</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="js/chinaMapConfig.js"></script>
+	<script type="text/javascript" src="js/map-min.js"></script>
+
+	<script type="text/javascript" src="js/map.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logosearch">
+			<a href="../index.html" class="logo"><img src="image/logo.png"></a>
+			<input type="text" class="search" placeholder="搜索">
+		</div>
+		<ul class="top">
+			<li><a href="../index.html" id="nav">首页</a></li>
+			<li><a href="#" id="nav_bright">建筑科普</a></li>
+			<li><a href="../jianzhuxinshang/jianzhuxinshang.html" id="nav">建筑欣赏</a></li>
+			<li><a href="../community/community.html" id="nav">社区</a></li>
+			<li><a href="../login/index.html" id="navv"><img src="image/user.png"></a></li>
+		</ul>
+	</header>
+
+	<div class="container main">
+
+		<div class="container switch">
+
+			<details>
+				<summary>
+					<div class="button">按建筑类型分类</div>
+					<div class="details-modal-overlay"></div>
+				</summary>
+				<div class="details-modal">
+					<div class="details-modal-close">
+
+					</div>
+					<div class="details-modal-title">
+						<h1>建筑类型</h1>
+					</div>
+					<div class="details-modal-content">
+						<div class="container">
+							<div class="box">
+								<div class="img-box">
+									<img src="image/gongdian.png" alt="">
+								</div>
+								<div class="text-box">
+									<div>
+										<h2>宫殿</h2>
+										<p>宫殿是帝王处理朝政或宴居的建筑物，宫殿是帝王朝会和居住的地方，规模宏大，形象壮丽，格局严谨，给人强烈的精神感染，突现王权的尊严。
+											中国传统文化注重巩固人间秩序，与西方和伊斯兰建筑以宗教建筑为主不同，中国建筑成就最高、规模最大的就是宫殿。
+											从原始社会到西周，宫殿的萌芽经历了一个合首领居住、聚会、祭祀多功能为一体的混沌未分的阶段，发展为与祭祀功能分化，只用于君王后妃朝会与居住。在宫内，宫殿常依托城市而存在，以中轴对称规整严谨的城市格局，突出宫殿在都城中的地位。
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="img-box">
+									<img src="image/ta.png" alt="">
+								</div>
+								<div class="text-box">
+									<div>
+										<h2>塔楼</h2>
+										<p>塔是一种在亚洲常见的，有着特定的形式和风格的中国传统建筑。最初是供奉或收藏佛骨、佛像、佛经、僧人遗体等的高耸型点式建筑，称“佛塔”。14世纪以后，塔逐渐世俗化。
+											在汉语中，塔（Tower）也指高耸的塔形建筑，如埃菲尔铁塔、比萨斜塔、电视塔等，但这一概念与本条目所描述的东方塔（Pagoda）并没有太多的关联，请参见塔。
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="img-box">
+									<img src="image/yuanlin.png" alt="">
+								</div>
+								<div class="text-box">
+									<div>
+										<h2>园林</h2>
+										<p>园林，指特定培养的自然环境和游憩境域。在一定的地域运用工程技术和艺术手段，通过改造地形（或进一步筑山、叠石、理水）、种植树木花草、营造建筑和布置园路等途径创作而成的美的自然环境和游憩境域，就称为园林。在中国传统建筑中独树一帜，有重大成就的是古典园林建筑。
+											传统中国文化中的一种艺术形式，受到传统“礼乐”文化影响很深。通过地形、山水、建筑群、花木等作为载体衬托出人类主体的精神文化。</p>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="img-box">
+									<img src="image/si.png" alt="">
+
+								</div>
+								<a href="../buildtype-thirdpage/index.html">
+									<div class="text-box">
+
+										<div>
+											<h2>寺庙</h2>
+											<p>寺庙是佛教建筑之一，汉传佛教的寺庙均是中式建筑风格，藏传佛教的寺庙多是汉藏融合的建筑风格。中国寺庙建筑有意将内外空间模糊化，讲究室内室外空间的相互转化。
+											</p>
+										</div>
+
+									</div>
+								</a>
+							</div>
+							<div class="box">
+								<div class="img-box">
+									<img src="image/lingmu.png" alt="">
+								</div>
+								<div class="text-box">
+									<div>
+										<h2>陵墓</h2>
+										<p>陵墓：指帝王、诸侯的坟墓。现多指领袖或先烈的坟地。亦泛指坟墓。中国古代习用土葬，以秦始皇陵为代表。</p>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<div class="img-box">
+									<img src="image/lou.png" alt="">
+								</div>
+								<div class="text-box">
+									<div>
+										<h2>住宅</h2>
+										<p>住宅是指专供居住的房屋，包括别墅、公寓、职工家属宿舍和集体宿舍、职工单身宿舍和学生宿舍等。但不包括住宅楼中作为人防用、不住人的地下室等，也不包括托儿所、病房、疗养院、旅馆等具有专门用途的房屋。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</details>
+		</div>
+	</div>
+
+	<div class="map">
+		<div class="wrap">
+			<div class="itemCon" style="float: left">
+				<div id="ChinaMap" style="margin: 50px;"></div>
+				<div id="stateTip" style="position: absolute;left: 100%;text-align: left;display: inline;">
+				</div>
+
+			</div>
+			<div style="float:left;margin-top: 500px;"><img src="image/sanduanxian.png"></div>
+
+			<div id="mapTipContent" style="width: 900px;margin: 0 auto;display: none">
+				<div class="mapTipText mapTipText26"> 
+					<div class="mapTipImg"><img src="image/menggubao1.png" alt="" /></div>
+					<div class="mapTipList">
+						<h2><a href="../buildtype-thirdpagetwo/buildtype-thirdpagetwo.html">内蒙古<span>蒙古包</span></a></h2>
+						<h3>
+							<p></p><br />
+							<p>蒙古包是蒙古族牧民居住的一种房子。建造和搬迁都很方便，适于牧业生产和游牧生活。蒙古包古代称作穹庐、“毡包”或“毡帐”。</p><br />
+							<p><a href="../buildtype-thirdpagetwo/buildtype-thirdpagetwo.html">了解更多</a></p>
+						</h3>
+					</div>
+				</div>
+				<div class="mapTipText mapTipText5">
+					<div class="mapTipImg"><img src="image/yuanlin.jpg" alt="" /></div>
+					<div class="mapTipList">
+						<h2><a href="">江苏<span>苏州园林</span></a></h2>
+						<h3>
+							<p></p><br />
+							<p>苏州古典园林溯源于春秋，发展于晋唐，繁荣于两宋，全盛于明清。</p><br />
+							<p><a href="">了解更多</a></p>
+						</h3>
+					</div>
+				</div>
+				<div class="mapTipText mapTipText14">
+					<div class="mapTipImg" id="special"><img src="image/tulou.png" alt="" /></div>
+					<div class="mapTipList">
+						<h2><a href="">福建<span>土楼</span></a></h2>
+						<h3>
+							<p></p><br />
+							<p>土楼以生土为主要建筑材料、生土与木结构相结合，并不同程度地使用石材的大型民居建筑。其中分布最广、数量最多、品类最丰富、保存最完好的，是福建土楼。</p><br />
+							<p><a href="">了解更多</a></p>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+</body>
+
+</html>

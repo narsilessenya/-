@@ -1,0 +1,503 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "造字工房尚雅（非商用）" "宋体";
+    scroll-behavior: smooth;
+}
+
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "宋体";
+    font-size: 1rem;
+    line-height: 1.5;
+    background: url(../image/background.jpg);
+    color: #484847;
+    padding-bottom: 5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4em;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    background-color: #6d000e;
+    font-family: "造字工房尚雅（非商用）";
+    box-shadow: 2px 4px 10px rgb(125, 79, 79);
+}
+
+header #logosearch {
+    display: flex;
+}
+
+header .logo img {
+    width: 50px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .search {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 10px;
+    margin: 20px;
+    width: 160px;
+    height: 35px;
+    border: 0px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+header #navv img {
+    width: 40px;
+
+}
+
+header ul li a#nav:hover,
+header ul li a#nav.active {
+    background: #fff;
+    color: #2b1055;
+
+}
+
+a#nav_bright {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+a#navv img:hover,
+a#navv img:hover {
+    filter: invert(20%);
+}
+
+.top {
+    color: #fff;
+}
+
+.responsive-wrapper {
+    width: 95%;
+    max-width: 1900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.page-title {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-title h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    position: relative;
+}
+
+.page-title h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: -3px;
+    height: 2px;
+    background-color: currentcolor;
+}
+
+.magazine-layout {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 2rem;
+}
+
+.magazine-column {
+    padding: 0 1.5rem;
+    grid-column: span 5;
+}
+
+@media (min-width: 1200px) {
+    .magazine-column {
+        grid-column: span 1;
+        border-right: 1px solid #ccc;
+    }
+
+    .magazine-column:last-child {
+        border-right: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .magazine-column:nth-child(2) {
+        grid-column: span 2;
+    }
+}
+
+.article+.article {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+.article-img+* {
+    margin-top: 1rem;
+}
+
+.article-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.article-title {
+    font-family: "造字工房尚雅（非商用）";
+    font-weight: 900;
+    line-height: 1.25;
+    color: #000;
+}
+
+.article-title--large {
+    font-size: 2rem;
+}
+
+.article-title--large+* {
+    margin-top: 1.5rem;
+}
+
+.article-title--medium {
+    font-size: 1.5rem;
+}
+
+.article-title--medium+* {
+    margin-top: 0.75rem;
+}
+
+.article-title--small {
+    font-size: 1.25rem;
+}
+
+.article-title--small+* {
+    margin-top: 0.75rem;
+}
+
+.article-link {
+    color: inherit;
+    font-family: "STZhongsong";
+}
+
+.mark {
+    background-color: #fabea1;
+    font-family: "STZhongsong";
+}
+
+.mark--secondary {
+    background-color: #c2dddf;
+    font-family: "STZhongsong";
+}
+
+.mark--tertiary {
+    background-color: #f8e177;
+    font-family: "STZhongsong";
+}
+
+.article-excerpt,
+.article-creditation {
+    font-size: 1.125rem;
+    line-height: 1.4;
+}
+
+.article-excerpt p+p,
+.article-creditation p+p {
+    margin-top: 1.5rem;
+}
+
+.article-author {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.article-author-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 12px;
+    background-color: #323232;
+    overflow: hidden;
+    background-blend-mode: multiply;
+}
+
+.article-author-img+.article-author-info {
+    margin-left: 0.5rem;
+}
+
+.article-author-info {
+    line-height: 1.375;
+}
+
+.article-author-info dl {
+    margin-top: 0.25em;
+}
+
+.article-author-info dt {
+    font-weight: 600;
+}
+
+.article-author-info dd {
+    font-size: 0.875em;
+}
+
+.article-category {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.article-category svg {
+    max-width: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.article-podcast-player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
+}
+
+.podcast-play-button {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 12px;
+    border: 0;
+    background-color: #000;
+    margin-right: 0.5rem;
+}
+
+.podcast-play-button svg {
+    max-width: 1rem;
+    max-height: 1rem;
+    fill: #fff;
+}
+
+.podcast-progression {
+    flex: 1;
+    height: 8px;
+    border-radius: 99em;
+    background-color: #d9d4cd;
+    background-image: linear-gradient(to right, #f99970 30%, #d9d4cd 30%, #d9d4cd 100%);
+}
+
+.podcast-time {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-left: 0.5rem;
+}
+
+:focus {
+    outline: 0;
+}
+
+
+
+
+
+
+
+.new {
+    margin: 0;
+    background-image: url;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider input {
+    display: none;
+}
+
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 350px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.testimonials .item {
+    width: 450px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #b25442;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.4s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    user-select: none;
+    cursor: pointer;
+}
+
+.testimonials .item img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 8px solid #fff;
+    justify-content: center;
+}
+
+.testimonials .item p {
+    color: #ddd;
+}
+
+.testimonials .item h2 {
+    font-size: 14px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots label {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #413B52;
+    margin: 7px;
+    transition-duration: 0.2s;
+}
+
+#t-1:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-4"],
+#t-5:checked~.dots label[for="t-5"] {
+    transform: scale(2);
+    background-color: #fff;
+}
+
+#t-1:checked~.dots label[for="t-2"],
+#t-2:checked~.dots label[for="t-1"],
+#t-2:checked~.dots label[for="t-3"],
+#t-3:checked~.dots label[for="t-2"],
+#t-3:checked~.dots label[for="t-4"],
+#t-4:checked~.dots label[for="t-3"],
+#t-4:checked~.dots label[for="t-5"],
+#t-5:checked~.dots label[for="t-4"] {
+    transform: scale(1.5);
+}
+
+#t-1:checked~.testimonials label[for="t-5"] {
+    transform: translate3d(1200px, 0, -360px) rotateY(-45deg);
+}
+
+#t-1:checked~.testimonials label[for="t-4"],
+#t-2:checked~.testimonials label[for="t-5"] {
+    transform: translate3d(900px, 0, -270px) rotateY(-35deg);
+    z-index: 1;
+}
+
+#t-1:checked~.testimonials label[for="t-3"],
+#t-2:checked~.testimonials label[for="t-4"],
+#t-3:checked~.testimonials label[for="t-5"] {
+    transform: translate3d(600px, 0, -180px) rotateY(-25deg);
+    z-index: 2;
+}
+
+#t-1:checked~.testimonials label[for="t-2"],
+#t-2:checked~.testimonials label[for="t-3"],
+#t-3:checked~.testimonials label[for="t-4"],
+#t-4:checked~.testimonials label[for="t-5"] {
+    transform: translate3d(300px, 0, -90px) rotateY(-15deg);
+    z-index: 3;
+}
+
+#t-2:checked~.testimonials label[for="t-1"],
+#t-3:checked~.testimonials label[for="t-2"],
+#t-4:checked~.testimonials label[for="t-3"],
+#t-5:checked~.testimonials label[for="t-4"] {
+    transform: translate3d(-300px, 0, -90px) rotateY(15deg);
+    z-index: 3;
+}
+
+#t-3:checked~.testimonials label[for="t-1"],
+#t-4:checked~.testimonials label[for="t-2"],
+#t-5:checked~.testimonials label[for="t-3"] {
+    transform: translate3d(-600px, 0, -180px) rotateY(25deg);
+}
+
+#t-5:checked~.testimonials label[for="t-2"],
+#t-4:checked~.testimonials label[for="t-1"] {
+    transform: translate3d(-900px, 0, -270px) rotateY(35deg);
+}
+
+#t-5:checked~.testimonials label[for="t-1"] {
+    transform: translate3d(-1200px, 0, -360px) rotateY(45deg);
+}
+
+#t-1:checked~.testimonials label[for="t-1"],
+#t-2:checked~.testimonials label[for="t-2"],
+#t-3:checked~.testimonials label[for="t-3"],
+#t-4:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-4"],
+#t-5:checked~.testimonials label[for="t-5"] {
+    z-index: 4;
+}
+
+
