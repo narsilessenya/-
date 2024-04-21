@@ -293,6 +293,6 @@ h2 {
   padding: 0 10px;
 }
 
-/*.card__action .fa:focus{
+.card__action .fa:focus{
   color: red;
-}*/
+}
