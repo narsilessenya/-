@@ -16,6 +16,9 @@ body {
   color: #fff;
 }
 
+html {
+    overflow-y: scroll;
+}
 
 header {
   position: fixed;

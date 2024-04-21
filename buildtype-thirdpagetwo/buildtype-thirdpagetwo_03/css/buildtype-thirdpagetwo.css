@@ -1,0 +1,414 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 18px;
+	background-image: url(../image/background.jpg);
+	font-family: "华文中宋";
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4em;
+	padding: 1em 1em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+	background-color: #6d000e;
+	font-family: "造字工房尚雅（非商用）";
+	box-shadow: 2px 4px 10px rgb(125, 79, 79);
+}
+
+header #logosearch {
+	display: flex;
+}
+
+header .logo img {
+	width: 50px;
+	margin: 10px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header .search {
+	text-decoration: none;
+	font-size: 1em;
+	padding: 10px;
+	margin: 20px;
+	width: 160px;
+	height: 35px;
+	border: 0px;
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 0;
+
+}
+
+header ul li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+header ul li a {
+	text-decoration: none;
+	padding: 6px 15px;
+	color: #fff;
+	border-radius: 20px;
+
+}
+
+header #navv img {
+	width: 40px;
+
+}
+
+header ul li a#nav:hover,
+header ul li a#nav.active {
+	background: #fff;
+	color: #2b1055;
+
+}
+
+a#nav_bright {
+	background: #fff;
+	color: #2b1055;
+}
+
+
+a#navv img:hover,
+a#navv img:hover {
+	filter: invert(20%);
+}
+
+
+.home img {
+	width: 100%;
+}
+
+.science img {
+	width: 100%;
+}
+
+.reco img {
+	width: 100%;
+}
+
+.appre img {
+	width: 100%;
+}
+
+#footer img {
+	width: 100%;
+}
+
+
+html {
+	overflow-y: scroll;
+}
+
+h1 {
+	color: #3c5840;
+}
+
+/*了解更多的动画编辑*/
+div article p a,
+div article p a:link,
+div article p a:active,
+div article p a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color: #6d000e;
+	outline: none;
+	text-decoration: underline;
+}
+
+div article p a:hover {
+	color: #000;
+}
+	
+img {
+	display: block;
+}
+
+p {
+	margin: 1em 0;
+}
+
+/* Nav
+*********/
+
+nav#primary {
+	z-index: 5;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -40px;
+}
+
+nav#primary li {
+	position: relative;
+	height: 20px;
+}
+
+nav#primary a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: transparent url('../image/nav-dottwo.png') 4px 4px no-repeat;
+}
+
+nav#primary a:hover,
+nav#primary a:active {
+	background: transparent url('../image/nav-dottwo.png') 4px -16px no-repeat;
+}
+
+nav#primary h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;
+	;
+	color: #fff;
+	white-space: nowrap;
+	background: transparent url('../image/nav-arrow.png') 100% 50% no-repeat;
+	font-size: 16px;
+}
+
+/*************/
+
+/* content */
+#content {
+	z-index: 4;
+	position: relative;
+	max-width: 1024px;
+	padding: 0 10px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+#content article {
+	width: 500px;
+	/*文本框宽度*/
+}
+
+#introduction,
+#appearance,
+#develop-history,
+#features {
+	padding-top: 105px;
+}
+
+#introduction {
+	position: absolute;
+	top: 100px;
+}
+
+#appearance {
+	position: absolute;
+	top: 1000px;
+	left: 600px;
+}
+
+#develop-history {
+	position: absolute;
+	top: 2300px;
+}
+
+#content h1 {
+	margin: 0 0 25px 0;
+	font-size: 60px;
+	font-family: "造字工房尚雅（非商用）";
+	font-weight: normal;
+	line-height: 50px;
+}
+
+#features {
+	position: absolute;
+	top: 3900px;
+	left: 600px;
+}
+
+
+#parallax-bg3 {
+	z-index: 3;
+	position: fixed;
+	left: 60%;
+	top: 0px;
+	width: 940px;
+	margin-left: -470px;
+}
+
+/* balloon */
+#bg3-1 {
+	position: absolute;
+	top: 230px;
+	left: 355px;
+}
+
+#bg3-2 {
+	position: absolute;
+	top: 1100px;
+	left: -300px;
+}
+
+#bg3-3 {
+	position: absolute;
+	top: 1950px;
+	left: 403px;
+}
+
+#bg3-4 {
+	position: absolute;
+	top: 3200px;
+	left: -300px;
+}
+
+/*mid*/
+#parallax-bg2 {
+	z-index: 2;
+	position: fixed;
+	left: 60%;
+	top: 0;
+	width: 1200px;
+	margin-left: -600px;
+}
+
+#bg2-1 {
+	position: absolute;
+	top: 162px;
+	left: 200px;
+}
+
+#bg2-2 {
+	position: absolute;
+	top: 300px;
+	left: 1150px;
+}
+
+#bg2-3 {
+	position: absolute;
+	top: 543px;
+	left: -35px;
+}
+
+#bg2-4 {
+	position: absolute;
+	top: 1180px;
+	left: 250px;
+}
+
+#bg2-5 {
+	position: absolute;
+	top: 900px;
+	left: 890px;
+}
+
+#parallax-bg1 {
+	z-index: 1;
+	position: fixed;
+	left: 60%;
+	top: 0;
+	width: 1200px;
+	margin-left: -600px;
+}
+
+#bg1-1 {
+	position: absolute;
+	top: 85px;
+	left: -270px;
+}
+
+#bg1-2 {
+	position: absolute;
+	top: 600px;
+	left: 795px;
+}
+
+#bg1-3 {
+	position: absolute;
+	top: 900px;
+	left: -220px;
+}
+
+#bg1-4 {
+	position: absolute;
+	top: 1020px;
+	left: 450px;
+}
+
+.bread {
+	width: 1240px;
+	height: 24px;
+	margin: 65px auto auto 15em;
+	padding-top: 30px;
+	position: absolute;
+	z-index: 10000;
+
+}
+
+.bread .type-name {
+	display: inline-block;
+
+}
+
+.bread .type-name a {
+	color: #222222;
+	text-decoration: none;
+}
+
+.bread .type-name+.type-name:before {
+	content: ">\00a0";
+}
+
+.bread .type-name:last-child a {
+	color: #6d000e;
+}
+
+.bread .type-name:hover a {
+	color: #3c5840;
+}
